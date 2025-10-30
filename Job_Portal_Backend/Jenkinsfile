@@ -61,12 +61,12 @@ description: 'Credentials ID for the deployment API key (Secret Text)')
     success { echo "✅ Tests passed, triggering deployment API..." withCredentials([ string(credentialsId: params.DEPLOY_URL_CRED_ID, variable: 'DEPLOY_URL'), string(credentialsId: params.DEPLOY_KEY_CRED_ID, variable: 'DEPLOY_KEY') ]) { 
         sh ''' 
           json_payload=$(printf '{"applicationId":"%s"}' "$APP_ID") 
-          curl -fS -X POST \ 
-            "$DEPLOY_URL" \ 
-            -H 'accept: application/json' \ 
-            -H 'Content-Type: application/json' \ 
-            -H "x-api-key: $DEPLOY_KEY" \ 
-            --data-binary "$json_payload" \ 
+          curl -fS -X POST  
+            "$DEPLOY_URL" 
+            -H 'accept: application/json'  
+            -H 'Content-Type: application/json'  
+            -H "x-api-key: $DEPLOY_KEY" 
+            --data-binary "$json_payload"  
             -w "\nHTTP %{http_code}\n" 
         ''' 
       } 
