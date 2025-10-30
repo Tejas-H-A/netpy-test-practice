@@ -27,33 +27,33 @@ description: 'Credentials ID for the deployment API key (Secret Text)')
  
     stage('Install requirements') { 
       steps { 
-        sh '.venv/bin/pip install -r requirements.txt' 
+       sh '.venv/bin/pip install -r Job_Portal_Backend/requirements.txt'
       } 
     } 
  
     stage('Migrations') { 
       steps { 
-        sh '.venv/bin/python manage.py makemigrations' 
-        sh '.venv/bin/python manage.py migrate' 
+        sh '.venv/bin/python Job_Portal_Backend/manage.py makemigrations' 
+        sh '.venv/bin/python Job_Portal_Backend/manage.py migrate' 
       } 
     } 
  
     stage('Unit Tests') { 
       steps { 
-        sh '.venv/bin/python manage.py test' 
+        sh '.venv/bin/python Job_Portal_Backend/manage.py test' 
       } 
     } 
  
     stage('Start Server') { 
       steps { 
-        sh '.venv/bin/python manage.py runserver 0.0.0.0:8000 &' 
+        sh '.venv/bin/python Job_Portal_Backend/manage.py runserver 0.0.0.0:8000 &' 
         sh 'sleep 5' // wait for server to boot 
       } 
     } 
  
     stage('API Test') { 
       steps { 
-        sh '.venv/bin/python check.py' 
+        sh '.venv/bin/python Job_Portal_Backend/check.py' 
       } 
     } 
   }   
