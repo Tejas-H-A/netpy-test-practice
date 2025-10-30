@@ -18,7 +18,7 @@ data = {
 }
 
 # Path to resume file
-resume_path = "./STR-Order-ORD-20250904-B8F12-receipt (1).pdf"   # <-- change to your test file
+resume_path = "Job_Portal_Backend/STR-Order-ORD-20250904-B8F12-receipt (1).pdf"   # <-- change to your test file
 
 # Check if file exists before sending
 if not os.path.isfile(resume_path):
