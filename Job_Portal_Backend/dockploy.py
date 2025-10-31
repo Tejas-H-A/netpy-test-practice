@@ -3,7 +3,7 @@
 
 import requests
 
-API_URL = "http://3.108.239.60:3000/api/project.all"
+API_URL = "http://3.111.54.113:3000//api/project.all"
 api_key = "GvhWOYvbAWVBFIrkPZcPikfnQyYPcRYbOsLpvAHaBakPIkGXnvSozcYXgEfPDZnO"
 app_name = "jobportal-backend-nnieql"
 
