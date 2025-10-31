@@ -12,8 +12,8 @@ function createFile(content, name, type) {
 
 describe('ApplicationForm', () => {
   beforeEach(() => {
-    // Stub the endpoint (without trailing slash to verify normalization)
-    vi.stubEnv('VITE_CANDIDATES_ENDPOINT', 'http://example.test/api/candidates');
+    // Stub the endpoint to match your deployed backend URL
+    vi.stubEnv('VITE_CANDIDATES_ENDPOINT', 'http://jobportal-backend-blxldx-53308d-52-66-221-55.traefik.me/api/candidates');
     // Mock fetch
     vi.spyOn(global, 'fetch').mockResolvedValue({
       ok: true,
@@ -59,8 +59,8 @@ describe('ApplicationForm', () => {
 
     const [calledUrl, options] = global.fetch.mock.calls[0];
 
-    // Expect normalized trailing slash
-    expect(calledUrl).toBe('http://example.test/api/candidates/');
+    // Expect normalized trailing slash with your actual backend URL
+    expect(calledUrl).toBe('http://jobportal-backend-blxldx-53308d-52-66-221-55.traefik.me/api/candidates/');
     expect(options).toMatchObject({ method: 'POST' });
     expect(options.body).toBeInstanceOf(FormData);
 
