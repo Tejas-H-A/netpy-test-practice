@@ -6,7 +6,7 @@ import requests
 API_URL = "http://3.111.54.113:3000/api/project.all"
 api_key = "GvhWOYvbAWVBFIrkPZcPikfnQyYPcRYbOsLpvAHaBakPIkGXnvSozcYXgEfPDZnO"
 app_name = "jobportal-backend-nnieql"
-
+ 
 def get_application_id():
     """Fetch Application ID"""
     headers = {
