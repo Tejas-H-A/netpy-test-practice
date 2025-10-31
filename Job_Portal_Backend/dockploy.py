@@ -3,9 +3,9 @@
 
 import requests
 
-API_URL = "http://3.111.54.113:3000/api/project.all"
-api_key = "GvhWOYvbAWVBFIrkPZcPikfnQyYPcRYbOsLpvAHaBakPIkGXnvSozcYXgEfPDZnO"
-app_name = "jobportal-backend-ebwlub"
+API_URL = "http://52.66.221.55:3000/api/project.all"
+api_key = "XbIgVWwiUuFHaEiLUGITrvrxPUJBaOaZomeENXyGembfkwnOacSErBbooljMAppx"
+app_name = "jobportal-backend-blxldx"
  
 def get_application_id():
     """Fetch Application ID"""
