@@ -15,10 +15,8 @@
     "start:prod": "vite preview --host, --port $PORT",
     "dev": "vite",
     "lint:fix": "eslint . --fix",
-    "test:vitest": "vitest",
-    "format": "prettier --write .",
-    "prepare": "husky install",
-    "postinstall": "husky install"
+    "test:vitest": "vitest"
+ 
   },
   "dependencies": {
     "react": "^19.1.1",
