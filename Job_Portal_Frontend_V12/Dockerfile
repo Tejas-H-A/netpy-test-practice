@@ -1,7 +1,7 @@
 # Multi-stage build for optimized production image
 
 # Build stage
-FROM node:22-alpine AS builder
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
@@ -21,7 +21,7 @@ ENV VITE_CANDIDATES_ENDPOINT=${VITE_CANDIDATES_ENDPOINT}
 RUN npm run build
 
 # Production stage
-FROM node:22-alpine AS production
+FROM node:20-alpine AS production
 
 WORKDIR /app
 
