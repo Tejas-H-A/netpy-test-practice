@@ -5,7 +5,7 @@
  * Google Gemini Integration
  * API key to be configured for your project
  */
-const GEMINI_API_KEY = 'AIzaSyBzOEXDkT9zT_89gtHIQ9hz4-MUj1_Ozl0'; // Replace this with your real Gemini API key
+const GEMINI_API_KEY = 'AIzaSyAFx1W2-Oc6T67AgDKRzRcTU6hsUR_Zyfk'; // Replace this with your real Gemini API key
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash:generateContent';
 
 /**
