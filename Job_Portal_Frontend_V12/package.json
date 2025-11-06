@@ -5,5 +5,24 @@
   "main": "eslint.config.js",
   "devDependencies": {},
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "start:prod": "vite preview --host, --port $PORT",
+    "dev": "vite",
+    "lint:fix": "eslint . --fix",
+    "test:vitest": "vitest",
+    "format": "prettier --write .",
+    "prepare": "husky install",
+    "postinstall": "husky install"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"  
+  }
+  
 }
