@@ -2,7 +2,7 @@ import requests
 import os
 
 # API endpoint
-url = "http://cidedeploycicd-csrx9k-920f81-31-97-60-222.traefik.me/api/candidates/"
+url = "http://jobportal-backend-eeubab-1c7597-13-202-73-252.traefik.me/api/candidates/"
 
 # Candidate data
 data = {
