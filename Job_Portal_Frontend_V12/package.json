@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A modern job portal with AI-powered resume analysis using Google Gemini API.",
   "main": "eslint.config.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
+  },
   "author": "",
   "license": "ISC",
   "scripts": {
@@ -16,11 +18,9 @@
     "lint:fix": "eslint . --fix",
     "test:vitest": "vitest",
     "build": "react-scripts build"
- 
   },
   "dependencies": {
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"  
+    "react-dom": "^19.1.1"
   }
-  
 }
