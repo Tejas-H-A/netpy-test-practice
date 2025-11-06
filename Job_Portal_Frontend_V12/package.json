@@ -4,9 +4,6 @@
   "description": "A modern job portal with AI-powered resume analysis using Google Gemini API.",
   "main": "eslint.config.js",
   "devDependencies": {},
-  "scripts": {
-    "test": "check.py"
-  },
   "author": "",
   "license": "ISC"
 }
